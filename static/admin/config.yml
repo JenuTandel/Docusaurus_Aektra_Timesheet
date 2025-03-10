@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo: JenuTandel/Docusaurus_Aektra_Timesheet
+  branch: main
+
+media_folder: "static/img"
+public_folder: "/img"
+
+collections:
+  - name: "documentation"
+    label: "Documentation"
+    folder: "docs"
+    create: true
+    slug: "{{slug}}"
+    extension: "markdown"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Sidebar Position",
+          name: "sidebar_position",
+          widget: "number",
+        }
+      - { label: "Body", name: "body", widget: "markdown" }

@@ -6,7 +6,7 @@ const config = {
   tagline: '"Track time, boost productivity - Simplify work with Timesheets!"',
   favicon: 'img/favicon.svg',
   
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://aekatra-timesheet.netlify.app/',
 
   baseUrl: '/',
 
@@ -24,25 +24,14 @@ const config = {
   presets: [
     [
       'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
+          include: ["**/*.md", "**/*.mdx"],
+          editUrl: ({docPath }) => {
+            const formattedDoc = docPath.replace(/\.mdx?$/, '');
+            return `https://aekatra-timesheet.netlify.app//admin/#/collections/documentation/entries/${formattedDoc}`;
           },
-        
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
         },
         theme: {
           customCss: './src/css/custom.css',

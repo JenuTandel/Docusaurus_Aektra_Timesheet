@@ -7,14 +7,15 @@ media_folder: "static/img"
 public_folder: "/img"
 
 collections:
-  - name: "documentation"
-    label: "Documentation"
+  - name: "docs"
+    label: "Docs"
     folder: "docs"
+    format: "frontmatter"
+    identifier_field: "title"
     nested:
       depth: 3
     create: true
-    slug: "{{slug}}"
-    extension: "markdown"
+    slug: "{{fields.title}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - {

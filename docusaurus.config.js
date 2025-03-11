@@ -29,8 +29,8 @@ const config = {
           sidebarPath: './sidebars.js',
           include: ["**/*.md", "**/*.mdx"],
           editUrl: ({docPath }) => {
-            const formattedDoc = docPath.replace(/\.mdx?$/, '');
-            return `https://aekatra-timesheet.netlify.app//admin/#/collections/documentation/entries/${formattedDoc}`;
+            const formattedDoc = docPath.replace("/docs/", "").replace(".md", "");
+            return `https://aekatra-timesheet.netlify.app/admin/#/collections/documentation/entries/${formattedDoc}`;
           },
         },
         theme: {
@@ -58,7 +58,7 @@ const config = {
             label: 'Getting Started',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/JenuTandel',
             label: 'GitHub',
             position: 'right',
           },

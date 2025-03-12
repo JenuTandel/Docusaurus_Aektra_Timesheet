@@ -8,8 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/easy.svg').default,
     description: (
       <>
-       Designed with a user-friendly interface, the timesheet allows effortless time tracking with just a few clicks. Quickly log hours, edit entries, and generate reports with ease.
-      </>
+Aekatra is designed with a user-friendly interface, ensuring a smooth and intuitive experience for everyone. Whether you’re an Employee, HR, or Manager, navigating through features like project management, payroll, leave tracking, and attendance is effortless. With a clean design and minimal learning curve, Aekatra helps you focus on your tasks without any hassle.      </>
     ),
   },
   {
@@ -17,17 +16,15 @@ const FeatureList = [
     Svg: require('@site/static/img/focus.svg').default,
     description: (
       <>
-        Automate time tracking and eliminate manual data entry, so you can concentrate on productivity and project goals. Gain insights into work patterns and optimize resource allocation.
-      </>
+Aekatra takes care of the complexities of HR, payroll, project management, and attendance, so you can concentrate on what truly matters—productivity, growth, and team success. Automate routine tasks, streamline approvals, and reduce manual work, allowing you to invest time where it counts.      </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Powered by 1Rivet',
     Svg: require('@site/static/img/react.svg').default,
     description: (
       <>
-Built with React for a seamless, fast, and dynamic user experience. Leverages modern UI components and state management for smooth performance across all devices.
-      </>
+Built with innovation and reliability, Aekatra is proudly powered by 1Rivet. Our commitment to efficiency, security, and seamless user experience ensures that your workforce management is always in good hands.</>
     ),
   },
 ];

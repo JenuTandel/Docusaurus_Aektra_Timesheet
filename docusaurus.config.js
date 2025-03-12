@@ -2,8 +2,8 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Aektara - Timesheet',
-  tagline: '"Track time, boost productivity - Simplify work with Timesheets!"',
+  title: 'Aektara',
+  tagline: '"Your All-in-One Workforce Management Solution"',
   favicon: 'img/favicon.svg',
   
   url: 'https://aekatra-timesheet.netlify.app/',

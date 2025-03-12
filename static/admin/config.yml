@@ -7,13 +7,31 @@ media_folder: "static/img"
 public_folder: "/img"
 
 collections:
-  - name: "docs"
-    label: "Docs"
-    folder: "docs"
+  - name: "timesheet docs"
+    label: "Timesheet Docs"
+    folder: "docs/timesheet"
     format: "frontmatter"
     identifier_field: "title"
     nested:
-      depth: 3
+      depth: 10
+    create: true
+    slug: "{{fields.title}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Sidebar Position",
+          name: "sidebar_position",
+          widget: "number",
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "performance review docs"
+    label: "Performance Review Docs"
+    folder: "docs/performance-review"
+    format: "frontmatter"
+    identifier_field: "title"
+    nested:
+      depth: 10
     create: true
     slug: "{{fields.title}}"
     fields:

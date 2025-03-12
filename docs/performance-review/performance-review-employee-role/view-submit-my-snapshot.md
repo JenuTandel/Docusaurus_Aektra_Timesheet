@@ -1,13 +1,12 @@
 ---
 title: View & Submit My Snapshot
 sidebar_position: 1
-slug: performance-review-employee-role/view-and-submit-my-snapshot
+slug: view-and-submit-my-snapshot
 ---
+
 Access the Aekatra web or mobile app and navigate to **“My Snapshots**” from the Menu and select the current Review Cycle.
 
 ![My Snapshot](/img/my-snapshot.jpg)
-
-
 
 ![Mobile View - My Snapshot](/img/mv-my-snapshot.jpg)
 

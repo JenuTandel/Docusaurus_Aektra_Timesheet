@@ -28,6 +28,8 @@ collections:
   - name: "performance review docs"
     label: "Performance Review Docs"
     folder: "docs/performance-review"
+    media_folder: "docs/performance-review/img"
+    public_folder: "/performance-review/img"
     format: "frontmatter"
     identifier_field: "title"
     nested:

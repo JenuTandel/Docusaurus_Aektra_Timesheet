@@ -34,6 +34,7 @@ collections:
     identifier_field: "title"
     nested:
       depth: 10
+      summary: "{{title}}"
     create: true
     slug: "{{fields.slug | default(fields.title | slug)}}"
     fields:

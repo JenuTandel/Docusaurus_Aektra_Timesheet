@@ -41,4 +41,5 @@ collections:
           name: "sidebar_position",
           widget: "number",
         }
+      - { label: "Slug", name: "slug", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }

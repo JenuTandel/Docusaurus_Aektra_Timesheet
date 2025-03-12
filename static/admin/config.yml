@@ -33,7 +33,7 @@ collections:
     nested:
       depth: 10
     create: true
-    slug: "{{fields.title}}"
+    slug: "{{fields.parent_path | default('performance-review')}}/{{fields.title | slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - {

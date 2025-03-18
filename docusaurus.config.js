@@ -43,7 +43,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/aekatra-final-logo.svg',
       navbar: {
         title: 'Aektara',
         logo: {
@@ -62,7 +62,12 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {
+            type: "docsVersionDropdown",
+            position: 'right'
+          }
         ],
+        
       },
       colorMode:{
         defaultMode:'light'
@@ -70,6 +75,21 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+      },
+      typesense: {
+        typesenseCollectionName: "aekatra-docs",
+        typesenseServerConfig: {
+          nodes: [
+            {
+              host: "siaxwl8ytuok0gdpp-1.a1.typesense.net",
+              port: 443,
+              protocol: "https",
+            },
+          ],
+          apiKey: "Dga0ypm7vKynUOgQXzrAHY1vGovOoZ5j",
+        },
+        typesenseSearchParameters: {},
+        contextualSearch: true,
       },
     }),
 };

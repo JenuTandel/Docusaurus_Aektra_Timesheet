@@ -1,6 +1,7 @@
 ---
+title: Introduction
+path: http://localhost:3000/admin/#/collections/timesheet
 sidebar_position: 1
-title: "Introduction"
 ---
 
 **Aekatra** is a comprehensive workforce management platform designed to centralize and simplify essential business processes. From **HR operations and project management to payroll processing, leave tracking, and performance monitoring,** Aekatra brings everything together in one seamless system.
